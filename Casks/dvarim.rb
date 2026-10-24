@@ -7,11 +7,11 @@ cask "dvarim" do
   desc "To-do app whose to-dos are lines in Markdown files"
   homepage "https://github.com/franz-rosenzweig/dvarim"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "Dvarim.app"
 
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Dvarim.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Dvarim.app"]
   end
 end
