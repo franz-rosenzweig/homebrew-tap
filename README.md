@@ -15,3 +15,4 @@ These apps aren't notarized by Apple, so each cask clears the quarantine flag on
 | --- | --- |
 | [dvarim](Casks/dvarim.rb) | [Dvarim](https://github.com/franz-rosenzweig/dvarim): to-dos as lines in Markdown files |
 | [moshe](Casks/moshe.rb) | [Moshe](https://github.com/franz-rosenzweig/moshe): writing over a folder of plain Markdown files |
+| [binah](Casks/binah.rb) | [Binah](https://github.com/franz-rosenzweig/binah): daily training for reading, reasoning and speaking |
