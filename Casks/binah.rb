@@ -1,6 +1,6 @@
 cask "binah" do
-  version "0.2.1"
-  sha256 "2486382f84ce64167ff078a976ec4af39291157cc05c54ae59728812f4901fce"
+  version "0.2.2"
+  sha256 "4c32419f89a748dbccacb060533d984fb26a47b6b161e3863a0d2f3ed8684931"
 
   url "https://github.com/franz-rosenzweig/binah/releases/download/v#{version}/Binah-#{version}-mac.zip"
   name "Binah"
