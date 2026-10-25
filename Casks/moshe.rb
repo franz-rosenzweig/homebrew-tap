@@ -1,6 +1,6 @@
 cask "moshe" do
-  version "0.4.1"
-  sha256 "33dfe2fbabfa6c211283147e1b22993b4c59cd50ac337fc5b1086ba8fed1a542"
+  version "0.4.2"
+  sha256 "f3c32f2189a07fcdc84a5abb964bc5984f2e9faceec80ddc86696d585d2b6ec8"
 
   url "https://github.com/franz-rosenzweig/moshe/releases/download/v#{version}/Moshe-#{version}-mac.zip"
   name "Moshe"
