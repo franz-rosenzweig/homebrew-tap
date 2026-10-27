@@ -1,6 +1,6 @@
 cask "music-toolbox" do
-  version "0.2.0"
-  sha256 "3e362e1d90268a46e442c793244dc52246687d3cd0dceb0354f94fd929bf1a88"
+  version "0.3.0"
+  sha256 "e59014fe2e2f7b2b43ea3bd66ac80b035d06f35fdffdb4b3cac0f5d0024d043a"
 
   url "https://github.com/franz-rosenzweig/music-toolbox/releases/download/v#{version}/MusicToolbox-#{version}-mac.zip"
   name "Music Toolbox"
