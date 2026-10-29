@@ -1,6 +1,6 @@
 cask "dvd-toolbox" do
-  version "0.1.0"
-  sha256 "6c6ae40e90b88efb17d179ef2f2cd0bed33897b1361dcd03b0916ccb6a5ea9b4"
+  version "0.1.1"
+  sha256 "9ac247adf20f8dcea67995edc31a7e34f51b2186904a9d3c27baae6072868a4c"
 
   url "https://github.com/franz-rosenzweig/dvd-toolbox/releases/download/v#{version}/DVDToolbox-#{version}-mac.zip"
   name "DVD Toolbox"
