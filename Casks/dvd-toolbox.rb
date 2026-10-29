@@ -1,6 +1,6 @@
 cask "dvd-toolbox" do
-  version "0.1.1"
-  sha256 "9ac247adf20f8dcea67995edc31a7e34f51b2186904a9d3c27baae6072868a4c"
+  version "0.1.2"
+  sha256 "7ff9513a4935d0d0bfb66859e05c42bb138563a37d7e195da48865fd8f9b0ccb"
 
   url "https://github.com/franz-rosenzweig/dvd-toolbox/releases/download/v#{version}/DVDToolbox-#{version}-mac.zip"
   name "DVD Toolbox"
@@ -11,6 +11,7 @@ cask "dvd-toolbox" do
   depends_on formula: "rsync"
   depends_on formula: "handbrake"
   depends_on formula: "libdvdcss"
+  depends_on formula: "ffmpeg"
 
   app "DVD Toolbox.app"
 
