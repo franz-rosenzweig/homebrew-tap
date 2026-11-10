@@ -1,6 +1,6 @@
 cask "chataltul" do
-  version "0.6.0"
-  sha256 "db516add01323ca92924c1b64ed897d9325ada08e34de9185e91069244e35936"
+  version "0.7.0"
+  sha256 "f4f0efd756478f7822a40ddab911f8146b38b03dca0559e6792c824472ca00cd"
 
   url "https://github.com/franz-rosenzweig/kavana-apps/releases/download/mac-v#{version}/Chataltul-#{version}-mac.zip"
   name "Chataltul"
