@@ -1,6 +1,6 @@
 cask "dvarim" do
-  version "0.2.2"
-  sha256 "52427ea050f50e15acd8f9a7f446ef846e309b4145c25d12a0fd278ac437b9a8"
+  version "0.2.3"
+  sha256 "b4fc2f1f2c9b4c75b5688a0939d27c35837ab57b8e5a2885ba8cc72d7c83e222"
 
   url "https://github.com/franz-rosenzweig/dvarim/releases/download/v#{version}/Dvarim-#{version}-mac.zip"
   name "Dvarim"
