@@ -1,0 +1,45 @@
+name: Bump Metrolist
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Point the cask at Metrolist's latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cask=Casks/metrolist.rb
+          tag=$(gh release view -R MetrolistGroup/Metrolist --json tagName -q .tagName)
+          version=${tag#v}
+          current=$(sed -nE 's/^  version "(.*)"/\1/p' "$cask")
+          if [ "$version" = "$current" ]; then
+            echo "Already at $version"
+            exit 0
+          fi
+
+          base="https://github.com/MetrolistGroup/Metrolist/releases/download/$tag"
+          arm=$(curl -fsSL "$base/metrolist-desktop-macos-arm64-$version.dmg" | sha256sum | cut -d' ' -f1)
+          intel=$(curl -fsSL "$base/metrolist-desktop-macos-x64-$version.dmg" | sha256sum | cut -d' ' -f1)
+
+          sed -i -E \
+            -e "s/^  version \".*\"/  version \"$version\"/" \
+            -e "s/(arm: +\")[0-9a-f]{64}/\1$arm/" \
+            -e "s/(intel: +\")[0-9a-f]{64}/\1$intel/" \
+            "$cask"
+          git diff
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "metrolist $version"
+          git push
