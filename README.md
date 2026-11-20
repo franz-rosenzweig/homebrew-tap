@@ -19,3 +19,11 @@ These apps aren't notarized by Apple, so each cask clears the quarantine flag on
 | [music-toolbox](Casks/music-toolbox.rb) | [Music Toolbox](https://github.com/franz-rosenzweig/music-toolbox): uploads music to a self-hosted library and loads it onto players |
 | [chataltul](Casks/chataltul.rb) | [Chataltul](https://github.com/franz-rosenzweig/kavana-apps): focus timer with a kitten, for the Mac |
 | [dvd-toolbox](Casks/dvd-toolbox.rb) | [DVD Toolbox](https://github.com/franz-rosenzweig/dvd-toolbox): rips DVDs into a Jellyfin library, named from TMDB |
+
+## Apps I didn't make
+
+There are also casks here for a few apps by other people that I use and that Homebrew doesn't carry. Their makers don't touch this tap, so a scheduled workflow checks their releases every six hours and moves the cask to the newest one, and `brew upgrade` picks it up from there.
+
+| Cask | App |
+| --- | --- |
+| [metrolist](Casks/metrolist.rb) | [Metrolist](https://github.com/MetrolistGroup/Metrolist): YouTube Music client |
