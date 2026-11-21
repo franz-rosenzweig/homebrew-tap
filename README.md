@@ -27,3 +27,4 @@ There are also casks here for a few apps by other people that I use and that Hom
 | Cask | App |
 | --- | --- |
 | [metrolist](Casks/metrolist.rb) | [Metrolist](https://github.com/MetrolistGroup/Metrolist): YouTube Music client |
+| [drop-desktop-client](Casks/drop-desktop-client.rb) | [Drop](https://github.com/Drop-OSS/drop): desktop app for a self-hosted Drop game store |
